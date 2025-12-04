@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Api\Drivers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request\Drivers\StoreDriverRequest;
-use Illuminate\Http\Request\Drivers\UpdateDriverRequest;
+use App\Http\Requests\Drivers\StoreDriverRequest;
+use App\Http\Requests\Drivers\UpdateDriverRequest;
 use App\Services\Drivers\DriverService;
 use Illuminate\Http\JsonResponse;
 

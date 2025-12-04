@@ -5,7 +5,7 @@ namespace App\Repositories\Drivers;
 use App\Models\Driver;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
-class DriversRepository
+class DriverRepository
 {
     protected $model;
 

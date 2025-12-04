@@ -3,13 +3,13 @@ namespace App\Services\Drivers;
 
 use App\Models\Driver;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use App\Repositories\Drivers\DriversRepository;
+use App\Repositories\Drivers\DriverRepository;
 
 class DriverService
 {
     protected $repository;
 
-    public function __construct(DriversRepository $repository)
+    public function __construct(DriverRepository $repository)
     {
         $this->repository = $repository;
     }
