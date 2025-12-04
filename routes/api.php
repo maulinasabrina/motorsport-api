@@ -26,10 +26,11 @@ Route::prefix('drivers')->group(function () {
 Route::prefix('races')->group(function () {
     Route::get('/', [RaceController::class,'index']);
     Route::get('/{id}', [RaceController::class,'show']);
+     Route::post('/', [RaceController::class,'store']);
+    Route::put('/{id}', [RaceController::class,'update']);
+    Route::delete('/{id}', [RaceController::class,'destroy']);
 
-    Route::middleware('auth:sanctum')->group(function () {
-        Route::post('/', [RaceController::class,'store']);
-        Route::put('/{id}', [RaceController::class,'update']);
-        Route::delete('/{id}', [RaceController::class,'destroy']);
-    });
+    // Route::middleware('auth:sanctum')->group(function () {
+       
+    // });
 });
